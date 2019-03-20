@@ -77,7 +77,7 @@ export default class Loadgame extends Component {
         highscore:this.state.highscore,
         score:this.state.highscore
       },()=>{
-        fetch('http://localhost:8080/updatescore',
+        fetch('https://rgbreactgame.herokuapp.com/updatescore',
         {
           method: 'POST',
           headers: {
@@ -205,7 +205,7 @@ export default class Loadgame extends Component {
       show: 'block',
       show2: 'none'
     })
-    fetch('http://localhost:8080/highscore',
+    fetch('https://rgbreactgame.herokuapp.com/login/highscore',
     {
       method: 'POST',
       headers: {
