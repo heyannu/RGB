@@ -68,8 +68,7 @@ export default class Loadgame extends Component {
     })
     if (this.state.selected === color && this.state.count < 3 || this.state.selected === color && this.state.count == 3) {
       this.state.p[0].text = "YOU WIN!";
-      this.state.h1 = this.state.selected;
-      this.state.p[0].color = "green";
+       this.state.p[0].color = "green";
       this.state.highscore = this.state.highscore+1;
       this.setState({
         p: this.state.p,
@@ -77,7 +76,7 @@ export default class Loadgame extends Component {
         highscore:this.state.highscore,
         score:this.state.highscore
       },()=>{
-        fetch('https://rgbreactgame.herokuapp.com/updatescore',
+         ('https://rgbreactgame.herokuapp.com/updatescore',
         {
           method: 'POST',
           headers: {
