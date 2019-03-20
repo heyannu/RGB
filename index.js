@@ -150,6 +150,6 @@ if(process.env.NODE_ENV === 'production'){
          res.sendFile(path.resolve(__dirname, 'Client', 'build', 'index.html'));
     })
 }
-app.listen(8080, function (req, res) {
+app.listen(process.env.PORT, process.env.IP, function (req, res) {
     console.log('connected');
 })
