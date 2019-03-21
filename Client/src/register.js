@@ -29,7 +29,7 @@ export default class Login extends Component {
   }
 
   submit(){
-    fetch('http://localhost:8080/register',
+    fetch('https://rgbreactgame.herokuapp.com/register',
     {
       method: 'POST',
       headers: {
