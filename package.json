@@ -22,7 +22,7 @@
     "server": "nodemon index.js",
     "Client": "npm start --prefix Client",
     "dev": "concurrently \"npm run server\" \"npm run Client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
+    "heroku-postbuild": "cd Client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
