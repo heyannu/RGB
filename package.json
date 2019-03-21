@@ -15,7 +15,6 @@
     "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {},
-  "proxy":"https://rgbreactgame.herokuapp.com",
   "scripts": {
     "client-install": "npm install --prefix Client",
     "start": "node index.js",
