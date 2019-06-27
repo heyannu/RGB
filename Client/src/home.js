@@ -12,8 +12,8 @@ render(){
 return(
 <div>
 <h1>home</h1>
- <a href="/register">Signup</a><br/>
- <a href="/login">Login</a>
+ <Link to="/signup">Signup</Link><br/>
+ <Link t="/Login">Login</Link>
 </div>
 )}
 }
